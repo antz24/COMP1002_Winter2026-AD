@@ -38,41 +38,43 @@ code {
 /* Element selector */
 
 p {
-  color : #333;
+  color : #333; 
 }
 
 /* Contextual selector (descendant)  - look up combinators on mdn web docs */
 
 article > p {
-  color : #0ab4f0;
+  color: #1a5fb4; 
 }
 
 /* Pseudo-class: first paragraph of its type */
-
 p:hover {
-  color: red;
+  color: red; 
 }
+
 /* Class selector */
 .note {
-color : #ff598f;
+  color:#ff598f; 
 }
 
-/* Attribute selector (article attribute affects paragraph) */
+/* Attribute selector */
 
 article[data-role="student"] {
-  background-color: #bada55;
+  background-color: #BADA55; 
 }
+
 /* ID selector (strongest so far) */
 
 #special-note {
-  color :aquamarine;
+  color: #ff3800;
 }
-/* Pseduo - Element */
 
+/* Pseduo - Element */
 article p:first-of-type::before {
-  content : "FIRST PARAGRAPH";
-  color : black;
+  content: "FIRST PARAGRAPH";
+  color: #000; 
 }
+
 
 /* Focus Questions 
 
@@ -103,8 +105,17 @@ article p:first-of-type::before {
 /* Element selector */
 
 p {
-  color :#bada55;
+  color: #BADA55; 
 }
+
+#q1 {
+  color: red;
+}
+
+.quiz-item {
+  color: blue; 
+}
+
 
 #q1 {
   color : red;
@@ -115,21 +126,22 @@ p {
 }
 /* ROUND TWO/ Q2 - What background colour will the element have? */
 
-.quiz-item{
-  background-color :#0ab4f0;
+.quiz-item {
+  background-color: #C0FFEE; 
 }
+
 .highlight {
-  background-color : pink;
+  background-color: #BADA55; 
 }
 
 /* ROUND THREE/ Q3 - What colour will the element be? */
 
-p [data-level="hard"] {
-  background-color : #f18a8f;
+p[data-level="hard"] {
+  background-color: red; 
 }
 
 .quiz-item {
-  background-color : orange;
+  background-color: orange; 
 }
 
 
@@ -145,18 +157,20 @@ p [data-level="hard"] {
 
 /* Visualize the box */
 
-.form-box{
-  display:block;
-  border: 2px dashed red;
-  padding: 20px;
-  margin: 100px 30px 40px 10px;
+.form-box {
+  display:block; 
+  border: 2px dashed red; 
+  padding-bottom: 20px;  
+  margin: 100px 30px 40px 10px; 
+
 }
 
 /* Each field becomes a visible block with spacing */
 .field {
   display: block;
   border: 2px dashed #aaa;
-  padding: 10px 0;
+  padding: 10px;
+  margin: 10px 0; 
 }
 
 .field span {
@@ -168,12 +182,11 @@ p [data-level="hard"] {
 /* Inputs/selects: give visible borders so students can inspect sizing */
 .field input,
 .field select {
- width: 100px;
- border: 2px solid #333;
- padding: 10px;
- box-sizing: border-box;
- border-radius: 5px;
- 
+  width: 100%; 
+  border: 2px solid #999; 
+  padding: 10px; 
+  box-sizing: border-box;
+  border-radius: 2px; 
 }
 
 /* Primary button */
